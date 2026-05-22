@@ -1,7 +1,7 @@
 TOTAL_OPERACIONES_FUSION = 0
 
 class medicamento:
-    def _init_(self, id, nombre, stock, vencimiento, precio):
+    def __init__(self, id, nombre, stock, vencimiento, precio):
         self.id = id
         self.nombre = nombre
         self.stock = stock
@@ -15,7 +15,7 @@ class medicamento:
 
 
 class arbolfarmacia:
-    def _init_(self):
+    def __init__(self):
         self.raiz = None
         self.alertas_stock = 0
         self.valor_total = 0
